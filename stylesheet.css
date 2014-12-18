@@ -1,61 +1,115 @@
-* {
-	font-family: arial, sans-serif;
-	font-size: 15px;
-	color: #404040;
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom CSS */
 
 a {
+	font-family: arial, sans-serif;
+	color: #404040;
+	font-size: 15px;
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 5px;
+    vertical-align: middle;
 }
 
-a.search-button:hover {
-	text-decoration: none;
+footer{
+	position: absolute;
+	bottom: 0;
+	height: 40px;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	line-height: 40px;
+	min-width: 100%;
+	color: #777;
 }
 
-img {
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-	border-left-width: 0px;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	height: 200px;
-	width: 450px;
-}
-
-.search-container{
-	position: relative;
-	width: 100%;
-	height: 50px;
-}
-
-.tool{
-	padding-top: 2px;
-	height: 30px;
-	width: 30px;
-}
-
-.toolbarheader {
-	position: relative;
-	margin-top:8px;
+.navbar{
 	float: right;
-	margin-right: 22px;
 }
 
-.toolbarlinks{
-	position: relative;
-	display:inline-block;
-	top: -12px;
-	float:right;
+form{
+  	overflow: hidden;
+  	width: 541px;
+  	height: 27px;
+  	display: block;
 }
 
-#account{
-	height: 45px;
-	width: 50px;
+input{
+	width: 524px;
+	height: 20px;
+}
+
+input .btn{
+	
+}
+
+#logo{
+	margin-left: auto;
+    margin-right: auto;
+	display: block;
+	padding-top: 150px;
+	height: 105px;
+	width: 290px;
+}
+
+#footer-left {
+	position: absolute;
+	left: 33px;
+	bottom: -10px;
+}
+
+#footer-right {
+	position: absolute;
+	right: 33px;
+	bottom: -10px;
 }
